@@ -1,0 +1,122 @@
+.main {
+    padding: 90px 90px 90px 90px;
+    font-family: Arial;
+}
+
+.svg {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.svg img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.barra {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 90px;
+}
+
+.barra a {
+    font-size: 20px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5px;
+    background-color: snow;
+    text-decoration: none;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.grid::after {
+    content: "";
+    position: absolute;
+    top: 4%;
+    left: 800px;
+    right: 800px;
+    border-top: 4px solid rgb(228, 87, 77); 
+    z-index: 1;
+}
+
+.descricao, .detalhes {
+    background-color: snow;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.descricao {
+    display: grid;
+    text-align: right;
+    align-items: center;
+}
+
+.foto img {
+      max-width: 100%;
+  height: auto;
+}
+
+.saiba {
+color: black;
+opacity: 30%;
+font-size: 35px;
+    display: grid;
+    padding: 40px;
+    align-items: center;
+    text-align: right;
+    word-break: break-word;
+}
+
+.resumo p {
+    line-height: 25px;
+    padding-left: 200px;
+    padding-bottom: 21.440px;
+}
+
+.resumo a {
+    display: inline-block;
+    background-color: rgb(228, 87, 77);
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.detalhes {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.detalhes h1 {
+    font-size: 18px;
+    align-items: center;
+}
+
+.detalhes p {
+    padding-bottom: 16px;
+}
+
+.detalhes h1 , p {
+    grid-column: -1;
+    margin: 0px;
+}
+
+.fim {
+    font-size: 20px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: snow;
+    text-align: center;
+}
